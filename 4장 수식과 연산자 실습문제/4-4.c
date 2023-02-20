@@ -3,10 +3,15 @@
 
 int main()
 {
-	int time;
-	scanf("%d", &time);
+	int input;
+	double num;
+	int result;
 
-	printf("%d:%d:%d", time / 3600, time % 3600 / 60, time % 60);
+	scanf("%d", &input);
+	num = input / 1000.0;
+	num += 0.5;
+	result = (int)num;
+	printf("%d", result * 1000);
 
 	return 0;
 }
