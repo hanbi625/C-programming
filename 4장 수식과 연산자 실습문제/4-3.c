@@ -3,10 +3,10 @@
 
 int main()
 {
-	int time;
-	scanf("%d", &time);
+	int N;
+	scanf("%d", &N);
 
-	printf("%d:%d:%d", time / 3600, time % 3600 / 60, time % 60);
+	printf("%d", N % 1000 / 100);
 
 	return 0;
 }
