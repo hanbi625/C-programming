@@ -3,10 +3,13 @@
 
 int main()
 {
-	int time;
-	scanf("%d", &time);
+	double N, r, s, pi = 3.14;
 
-	printf("%d:%d:%d", time / 3600, time % 3600 / 60, time % 60);
+	scanf("%lf", &N);
+	r = N / (2 * pi);
+	s = pi * r * r;
+	s += 0.5;
+	printf("%d", (int)s);
 
 	return 0;
 }
